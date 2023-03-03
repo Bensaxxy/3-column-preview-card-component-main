@@ -1,0 +1,163 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* colors link */
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body {
+  font-family: 'Big Shoulders Display', 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* container section */
+.container {
+  display: flex;
+  width: 70%;
+}
+
+/* card's section */
+.card {
+  padding: 3rem;
+  color: var(--Very-light-gray-background-headings-buttons);
+}
+
+/* first card */
+.card:nth-of-type(1) {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+/* second card */
+.card:nth-of-type(2) {
+  background-color: var(--Dark-cyan);
+}
+
+/* third card */
+.card:nth-of-type(3) {
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+/* card title page */
+.card h1 {
+  margin: 1.5rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* card description page */
+.card p {
+  color: var(--Transparent-white-paragraphs);
+  font-weight: 400;
+  font-family: 'Lexend Deca';
+  line-height: 1.7;
+  font-size: 14px
+}
+
+/* card button */
+.card button {
+  padding: 12px;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons);
+  border-radius: 1.5rem;
+  width: 130px;
+  cursor: pointer;
+  margin-top: 3.5rem;
+  font-weight: 400;
+  font-family: 'Lexend Deca';
+  transition: 0.5s ease-in-out;
+}
+
+/* first btn */
+.btn-1 {
+  color: var(--Bright-orange);
+}
+
+/* second btn */
+.btn-2 {
+  color: var(--Dark-cyan);
+}
+
+/* third btn */
+.btn-3 {
+  color: var(--Very-dark-cyan);
+}
+
+/* card hover */
+.card button:hover {
+  color: var(--Very-light-gray-background-headings-buttons);
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid var(--Very-light-gray-background-headings-buttons);
+}
+
+
+/* footer */
+.attribution {
+  font-size: 18px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(184, 100%, 22%);
+}
+
+/* footer hover */
+.attribution a:hover {
+  color: hsl(179, 100%, 13%);
+}
+
+
+/* media layout */
+@media screen and (max-width:900px) {
+
+  /* main */
+  main {
+    padding: 2em 0 1em;
+  }
+
+  /* container */
+  .container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  /* first card */
+  .card:nth-of-type(1) {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-left-radius: none;
+  }
+
+  /* third card */
+  .card:nth-of-type(3) {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+}
