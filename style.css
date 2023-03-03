@@ -124,6 +124,7 @@ main {
 
 .attribution a {
   color: hsl(184, 100%, 22%);
+  margin: 1rem 0 2rem;
 }
 
 /* footer hover */
